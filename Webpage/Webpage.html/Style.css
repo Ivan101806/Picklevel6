@@ -1,0 +1,36 @@
+.pastel-gradient-text {
+            background: linear-gradient(135deg, #16A34A 0%, #0D9488 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-pastel-glow {
+            background-color: #FAFBF7;
+            background-image: 
+                radial-gradient(at 10% 20%, rgba(168, 230, 207, 0.45) 0px, transparent 55%),
+                radial-gradient(at 90% 80%, rgba(233, 213, 255, 0.4) 0px, transparent 55%),
+                radial-gradient(at 50% 50%, rgba(255, 224, 172, 0.3) 0px, transparent 60%);
+        }
+        .soft-dots {
+            background-image: radial-gradient(rgba(22, 163, 74, 0.12) 2px, transparent 2px);
+            background-size: 24px 24px;
+        }
+        @keyframes floatMarquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            display: flex;
+            width: max-content;
+            animation: floatMarquee 35s linear infinite;
+        }
+        .animate-marquee:hover {
+            animation-play-state: paused;
+        }
+        /* Custom scrollbar for draggable marquee container */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
